@@ -33,19 +33,6 @@ def print_shop_list(shop_list):
   for shop_list_item in shop_list.values():
     print('{ingridient_name} {quantity} {measure}'.format(**shop_list_item))
 
-# def menu():
-#     name_menu = {}
-#     with open('menu.txt', 'r') as f:
-#         #Ветка без начального цикла
-#         name_menu = f.readline()
-#         print(name_menu)
-#         ingridient_quantity = int(f.readline())
-#         print(ingridient_quantity)
-#         i = 0
-#         while i <= ingridient_quantity:
-#             f.readline()
-#             i = i + 1
-
 def menu():
     with open('menu.txt', 'r') as f:
         while True:
