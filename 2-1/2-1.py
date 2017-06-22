@@ -36,13 +36,37 @@ def print_shop_list(shop_list):
 def menu():
     name_menu = {}
     with open('menu.txt', 'r') as f:
+        #Ветка без начального цикла
         name_menu = f.readline()
         print(name_menu)
         ingridient_quantity = int(f.readline())
-        print(type(ingridient_quantity))
+        print(ingridient_quantity)
         i = 0
-        while i >= ingridient_quantity:
+        while i <= ingridient_quantity:
             f.readline()
+            i = i + 1
+
+
+        #Ветка с циклом с самого начала
+        # for line in f:
+        #     name_menu = f.readline()
+        #     print(name_menu)
+
+            # ingridient_quantity = int(f.readline())
+            # print(ingridient_quantity)
+            # i = 0
+            # while i >= ingridient_quantity:
+            #     f.readline()
+            #     i = i + 1
+
+        # name_menu = f.readline()
+        # print(name_menu)
+        # n = int(f.readline())
+        # print(type(n))
+        # i = 0
+        # while i >= n:
+        #     f.readline()
+        #     i = i + 1
 
             # 1 читаем строку, выводим
             # 2 читаем строку - преобразуем в число N
