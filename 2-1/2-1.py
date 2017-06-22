@@ -48,9 +48,43 @@ def print_shop_list(shop_list):
 
 def menu():
     with open('menu.txt', 'r') as f:
-        for i in f:
+        while True:
             name_menu = f.readline()
             print(name_menu)
+            quality = int(f.readline())
+            #quality = f.readline()
+            #print(quality)
+            i = 0
+            while i <= quality:
+                f.readline()
+                i = i + 1
+
+        #     print(f.readline())
+        #     #name_menu = f.readline()
+        #     #print(name_menu)
+        #     ingridient_quantity = int(f.readline())
+        #     print(ingridient_quantity)
+        #     if not name_menu:
+        #         break
+
+                # name_menu = f.readline()
+                # print(name_menu)
+                # ingridient_quantity = int(f.readline())
+                # print(ingridient_quantity)
+                # i = 0
+                # while i <= ingridient_quantity:
+                #     f.readline()
+                # i = i + 1
+
+
+
+
+                # while True:
+            #     line = f.readline()
+            #     if not line: break
+            #     process(line)
+            # f.close()
+
             # ingridient_quantity = int(f.readline())
             # print(ingridient_quantity = int(f.readline())
         #Ветка с циклом с самого начала
