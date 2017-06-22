@@ -38,15 +38,16 @@ def menu():
     with open('menu.txt', 'r') as f:
         name_menu = f.readline()
         print(name_menu)
-        while f.readline() is True:
-            print ('Test')
+        ingridient_quantity = int(f.readline())
+        print(type(ingridient_quantity))
+        i = 0
+        while i >= ingridient_quantity:
+            f.readline()
 
-        # for line in f:
-        #     name_menu = f.readline()
-        #     print(name_menu)
-            # garbage = line
-            # if garbage is True:
-            #     f.readline()
+            # 1 читаем строку, выводим
+            # 2 читаем строку - преобразуем в число N
+            # 3 читаем строку N раз
+            # 4 начинаем сначала ))
 
 def create_shop_list():
     print ('Подготовка банкета. v.2.1')
@@ -58,5 +59,4 @@ def create_shop_list():
     print_shop_list(shop_list)
 
 create_shop_list()
-#Редакция на стационаре
 
