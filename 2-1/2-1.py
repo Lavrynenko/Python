@@ -52,66 +52,10 @@ def menu():
             name_menu = f.readline()
             print(name_menu)
             quality = int(f.readline())
-            #quality = f.readline()
-            #print(quality)
             i = 0
             while i <= quality:
                 f.readline()
                 i = i + 1
-
-        #     print(f.readline())
-        #     #name_menu = f.readline()
-        #     #print(name_menu)
-        #     ingridient_quantity = int(f.readline())
-        #     print(ingridient_quantity)
-        #     if not name_menu:
-        #         break
-
-                # name_menu = f.readline()
-                # print(name_menu)
-                # ingridient_quantity = int(f.readline())
-                # print(ingridient_quantity)
-                # i = 0
-                # while i <= ingridient_quantity:
-                #     f.readline()
-                # i = i + 1
-
-
-
-
-                # while True:
-            #     line = f.readline()
-            #     if not line: break
-            #     process(line)
-            # f.close()
-
-            # ingridient_quantity = int(f.readline())
-            # print(ingridient_quantity = int(f.readline())
-        #Ветка с циклом с самого начала
-        # for line in f:
-        #     name_menu = f.readline()
-        #     print(name_menu)
-
-            # ingridient_quantity = int(f.readline())
-            # print(ingridient_quantity)
-            # i = 0
-            # while i >= ingridient_quantity:
-            #     f.readline()
-            #     i = i + 1
-
-        # name_menu = f.readline()
-        # print(name_menu)
-        # n = int(f.readline())
-        # print(type(n))
-        # i = 0
-        # while i >= n:
-        #     f.readline()
-        #     i = i + 1
-
-            # 1 читаем строку, выводим
-            # 2 читаем строку - преобразуем в число N
-            # 3 читаем строку N раз
-            # 4 начинаем сначала ))
 
 def create_shop_list():
     print ('Подготовка банкета. v.2.1')
