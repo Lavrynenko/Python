@@ -35,9 +35,8 @@ def print_shop_list(shop_list):
 
 def menu():
     with open('menu.txt', 'r') as f:
-        while True:
-            name_menu = f.readline()
-            print(name_menu)
+        for line in f:
+            print(line)
             quality = int(f.readline())
             i = 0
             while i <= quality:
@@ -46,7 +45,7 @@ def menu():
 
 def create_shop_list():
     print ('Подготовка банкета. v.2.1')
-    print('Сегодня в нашем меню:\n')
+    print('Сегодня в нашем меню: \n')
     menu()
     person_count = int(input('Введите количество человек: '))
     dishes = input('Введите название блюд в расчете на одного человека: ').split(', ')
