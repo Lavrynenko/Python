@@ -20,7 +20,7 @@ def get_news(country_values):
     cnt = Counter(x for x in re.findall(r'[А-я\']{7,}', str(all_words)))
     pprint(cnt.most_common(10))
 
-def get_country_news():
+def get_country_news(): 
     country_info = {
         'fr': ('newsfr.json', 'ISO-8859-5'),
         'cy': ('newscy.json', 'koi8-r'),
